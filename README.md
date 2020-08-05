@@ -5,7 +5,7 @@ Home: https://github.com/csernazs/pytest-httpserver
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: pytest-httpserver is a httpserver for pytest
 
