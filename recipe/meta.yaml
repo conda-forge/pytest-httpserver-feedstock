@@ -1,18 +1,18 @@
 {% set name = "pytest-httpserver" %}
-{% set version = "0.3.4" %}
+{% set version = "0.3.5" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace('-', '_') }}-{{ version }}.tar.gz"
-  sha256: c7269aed8b4f2d24e41eaa2034dd9ab7ae02b0cb6e71afeae93127832920ec8d
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 1d553dc0fb27483d00a1e25ddcfc38bd3438336ed60f862cad8c50b11621a11a
 
 build:
-  noarch: "python"
+  noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
@@ -37,13 +37,13 @@ test:
     - python -m pytest -v -rs tests
 
 about:
-  home: "https://github.com/csernazs/pytest-httpserver"
-  dev_url: "https://github.com/csernazs/pytest-httpserver"
-  doc_url: "https://pytest-httpserver.readthedocs.io/"
-  license: "MIT"
-  license_family: "MIT"
-  license_file: "LICENSE"
-  summary: "pytest-httpserver is a httpserver for pytest"
+  home: https://github.com/csernazs/pytest-httpserver
+  dev_url: https://github.com/csernazs/pytest-httpserver
+  doc_url: https://pytest-httpserver.readthedocs.io/
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: pytest-httpserver is a httpserver for pytest
   description: |
     This library is designed to help to test http clients without contacting
     the real http server.  In other words, it is a fake http server which is
