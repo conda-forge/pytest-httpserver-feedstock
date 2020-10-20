@@ -5,9 +5,13 @@ Home: https://github.com/csernazs/pytest-httpserver
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-httpserver-feedstock/blob/master/LICENSE.txt)
 
 Summary: pytest-httpserver is a httpserver for pytest
+
+Development: https://github.com/csernazs/pytest-httpserver
+
+Documentation: https://pytest-httpserver.readthedocs.io/
 
 This library is designed to help to test http clients without contacting
 the real http server.  In other words, it is a fake http server which is
