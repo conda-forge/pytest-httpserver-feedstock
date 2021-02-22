@@ -22,19 +22,20 @@ requirements:
     - setuptools
   run:
     - python >=3.5
-    - setuptools
     - werkzeug
 
 test:
   imports:
     - pytest_httpserver
   requires:
+    - pip
     - pytest
     - requests
   source_files:
     - tests
   commands:
-    - python -m pytest -v -rs tests
+    - python -m pytest -v -ra tests
+    - python -m pip check
 
 about:
   home: https://github.com/csernazs/pytest-httpserver
