@@ -1,5 +1,5 @@
 {% set name = "pytest-httpserver" %}
-{% set version = "0.3.7" %}
+{% set version = "0.3.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 6204dcad49708768f3d2d25d3148239bc45caabb6927fa14426dd29f151ce59e
+  sha256: d896a6556e426240837891b0552040ed4148e393ddf63f675b60d47bcd2d3f39
 
 build:
   noarch: python
@@ -22,19 +22,20 @@ requirements:
     - setuptools
   run:
     - python >=3.5
-    - setuptools
     - werkzeug
 
 test:
   imports:
     - pytest_httpserver
   requires:
+    - pip
     - pytest
     - requests
   source_files:
     - tests
   commands:
-    - python -m pytest -v -rs tests
+    - python -m pytest -v -ra tests
+    - python -m pip check
 
 about:
   home: https://github.com/csernazs/pytest-httpserver
