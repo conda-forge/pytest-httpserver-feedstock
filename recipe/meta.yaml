@@ -1,5 +1,5 @@
 {% set name = "pytest-httpserver" %}
-{% set version = "0.3.8" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: d896a6556e426240837891b0552040ed4148e393ddf63f675b60d47bcd2d3f39
+  sha256: ae3095d134d40602e95721140e222139da4a579956123990af85825324d0746d
 
 build:
   noarch: python
