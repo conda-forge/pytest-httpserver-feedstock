@@ -1,11 +1,11 @@
-About pytest-httpserver
-=======================
+About pytest-httpserver-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-httpserver-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/csernazs/pytest-httpserver
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-httpserver-feedstock/blob/main/LICENSE.txt)
 
 Summary: pytest-httpserver is a httpserver for pytest
 
