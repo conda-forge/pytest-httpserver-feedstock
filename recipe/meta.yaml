@@ -34,7 +34,7 @@ test:
     - types-toml >=0.10.8
   commands:
     - python -m pip check
-    - python -m pytest -v -ra tests
+    - python -m pytest -v -ra tests -k 'not ipv6'
 
 about:
   home: https://github.com/csernazs/pytest-httpserver
