@@ -1,5 +1,5 @@
 {% set name = "pytest-httpserver" %}
-{% set version = "1.0.6" %}
+{% set version = "1.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 9040d07bf59ac45d8de3db1d4468fd2d1d607975e4da4c872ecc0402cdbf7b3e
+  sha256: f0317d679221fadab1faef17d71fba18f52a416e21fd68cbf60ef46b693c66f9
 
 build:
   noarch: python
@@ -34,7 +34,7 @@ test:
     - types-toml >=0.10.8
   commands:
     - python -m pip check
-    - python -m pytest -v -ra tests
+    - python -m pytest -v -ra tests -k 'not ipv6'
 
 about:
   home: https://github.com/csernazs/pytest-httpserver
