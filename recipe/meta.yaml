@@ -1,13 +1,13 @@
 {% set name = "pytest-httpserver" %}
-{% set version = "1.1.5" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: dc3d82e1fe00e491829d8939c549bf4bd9b39a260f87113c619b9d517c2f8ff1
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: fbad14449e1acfacf24a4d6e2de3211a8654597f03e296af4a833b51836467bc
 
 build:
   noarch: python
