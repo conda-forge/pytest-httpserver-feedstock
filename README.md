@@ -18,7 +18,6 @@ the real http server.  In other words, it is a fake http server which is
 accessible via localhost can be started with the pre-defined expected
 http requests and their responses.
 
-
 Current build status
 ====================
 
